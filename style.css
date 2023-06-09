@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Landing page */
+#landingPage
+{
+    background-image: url("images//sunrise-university-bK5t_WPETow-unsplash.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+#landingPage header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 1;
+    height: 25%;
+}
+#navheader{
+    background-color: navy;
+    padding: 10px;
+}
+#navheader a{
+    text-decoration: none;
+    color: #fff;
+}
+#navheader div{   
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 20px;
+}
+#navbtn{
+    background-color: #ff4500;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#navbtn:hover{
+    background-color:#fff;
+    transition: .3s ease;
+}
+#navbtn a{
+    color: #fff;
+    text-decoration: none;
+}
+#navbtn a:hover{
+    color: #ff4500;
+    text-decoration: none;
+
+}
+#navheader p button a{
+    color: aliceblue;
+    text-align: center;
+}
+
+#logo
+{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#logoSchool{
+    text-align: center;
+    align-self: center;
+}
+#navmenu {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+#navmenu ul{
+    display: flex;
+    gap:30px;
+}
+#navmenu ul li{
+    list-style: none;
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#navmenu ul li:hover{
+    background-color: white;
+}
+#navmenu ul li a{
+    text-decoration: none;
+    color: white;
+}
+#navmenu ul li a:hover{
+    color: #f00;
+    transition: .3 ease;
+}
+#logoSchool{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+/* About us */
+#aboutUs{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About us */
+#aboutUs
+{
+    background-color: #1F4068;
+    font-weight: bold;
+    color: white;
+}
+#aboutUs h2{
+    color: #ff4500;
+}
+#aboutUs li{
+    line-height: 30px;
+}
+
+/* Our staff */
+.card1{
+    background-color: #cc4b2c;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#staff .card1 { 
+    color: #fff;
+    /* bottom: 0; */
+}
+#staff .card1:hover { 
+    color:#fff;
+    background-color: #1F4068;
+    bottom: 0;
+    /* transform: translate(5px, 2px); */
+}
+.card{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#students{
+    display: grid;
+    height: auto;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.studentcard1,.studentcard2,.studentcard3,.studentcard4{
+    height: 400px;
+    padding: 10px;
+    color: black;
+    position: relative;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.studentcard1:hover p,.studentcard2:hover p , .studentcard3:hover p, .studentcard4:hover p{
+    display: none;
+}
+.studentcard4 p,.studentcard3 p ,.studentcard2 p,.studentcard1 p   {
+    position: relative;
+    font-weight: bold;
+    color: navy;
+    line-height: 25px;
+}
+.studentcard1::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("images/sean-lee-YyxAkTJhR54-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    opacity: .5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.studentcard2::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    opacity: .5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  
+}
+.studentcard3::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("images/arpit-rastogi-xv7DTjnx2YQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    opacity: .4;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.studentcard4::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("images/lucas-vasques-9vnACvX2748-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    opacity: .5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Footer */
+#footer{
+    background-color: #1F4068;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+#footer #socialfooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer #socialfooter div ul li a,a{
+    text-decoration: none;
+    color: white;
+}
+#footer #socialfooter div ul li{
+    list-style: none;
+    line-height: 40px;
+}
+#copy{
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    margin-top: 50px;
+}
+#footer h2{
+    color: red;
+}
+
+h2{
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
